@@ -1,0 +1,86 @@
+/* src/index.css or whatever main CSS file */
+@import "tailwindcss";
+
+/* define dark variant: jab .dark class ho ya dark attribute ho to dark styles apply honge */
+@variant dark (&:where(.dark, .dark *)); 
+
+@theme {
+  /* default theme variables or values (dark mode mode) */
+ /* richblack shades */
+  --color-richblack-5: #F1F2FF;
+  --color-richblack-25: #DBDDEA;
+  --color-richblack-50: #C5C7D4;
+  --color-richblack-100: #AFB2BF;
+  --color-richblack-200: #999DAA;
+  --color-richblack-300: #838894;
+  --color-richblack-400: #6E727F;
+  --color-richblack-500: #585D69;
+  --color-richblack-600: #424854;
+  --color-richblack-700: #2C333F;
+  --color-richblack-800: #161D29;
+  --color-richblack-900: #000814;
+
+  /* richblue shades */
+  --color-richblue-5: #ECF5FF;
+  --color-richblue-25: #C6D6E1;
+  --color-richblue-50: #A0B7C3;
+  --color-richblue-100: #7A98A6;
+  --color-richblue-200: #537988;
+  --color-richblue-300: #2D5A6A;
+  --color-richblue-400: #073B4C;
+  --color-richblue-500: #063544;
+  --color-richblue-600: #042E3B;
+  --color-richblue-700: #032833;
+  --color-richblue-800: #01212A;
+  --color-richblue-900: #001B22;
+
+  /* caribbeangreen shades */
+  --color-caribbeangreen-5: #C1FFFD;
+  --color-caribbeangreen-25: #83F1DE;
+  --color-caribbeangreen-50: #44E4BF;
+  --color-caribbeangreen-100: #06D6A0;
+  --color-caribbeangreen-200: #05BF8E;
+  --color-caribbeangreen-300: #05A77B;
+  --color-caribbeangreen-400: #049069;
+  --color-caribbeangreen-500: #037957;
+  --color-caribbeangreen-600: #026144;
+  --color-caribbeangreen-700: #014A32;
+  --color-caribbeangreen-800: #01321F;
+  --color-caribbeangreen-900: #001B0D;
+
+  /* pink shades */
+  --color-pink-5: #FFF1F1;
+  --color-pink-25: #FBC7D1;
+  --color-pink-50: #F79CB0;
+  --color-pink-100: #F37290;
+  --color-pink-200: #EF476F;
+  --color-pink-300: #D43D63;
+  --color-pink-400: #BA3356;
+  --color-pink-500: #9F294A;
+  --color-pink-600: #841E3E;
+  --color-pink-700: #691432;
+  --color-pink-800: #4F0A25;
+  --color-pink-900: #340019;
+
+  /* yellow shades */
+  --color-yellow-5: #FFF970;
+  --color-yellow-25: #FFE83D;
+  --color-yellow-50: #FFD60A;
+  --color-yellow-100: #E7C009;
+  --color-yellow-200: #CFAB08;
+  --color-yellow-300: #B69507;
+  --color-yellow-400: #9E8006;
+  --color-yellow-500: #866A04;
+  --color-yellow-600: #6E5503;
+  --color-yellow-700: #553F02;
+  --color-yellow-800: #3D2A01;
+  --color-yellow-900: #251400;
+}
+
+/* optionally override variables for dark mode */
+@layer theme {
+  .dark {
+    --color-bg: #1f2937;  /* ya koi dark background */
+    --color-text: #f9fafb; /* light text */
+  }
+}
