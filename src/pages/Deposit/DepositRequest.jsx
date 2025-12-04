@@ -22,8 +22,9 @@ const DepositRequest = () => {
     const fetchPayMethods = async () => {
       setLoading(true)
       try {
-        const res = await axios.get("https://sudhirtest.mobileappdemo.net/api/qrview");
+        const res = await axios.get(`${apis.qrview}`);
         if (res.data?.success) {
+          console.log(res.data.data);
           setPayMethod(res.data.data);
           setActiveModal(res.data.data[0]?.details?.type ?? null); // default first tab
         }
